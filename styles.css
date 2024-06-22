@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+header > img {
+    display: block;
+    margin-inline: auto;
+    margin-block-end: 3rem;
+}
+
+.flex {
+    display:flex;
+    gap: 2rem;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.stack > *  + *{
+    margin-block-start: 1rem;
+}
+
+.stack > h2 {
+    font-size: 250%;
+}
+
+img {
+    max-inline-size: 100%;
+}
+
+.flex > * {
+    flex: 1 1 33%;
+}
+
+.switcher-button button{
+    border: thin solid;
+    border-radius: 2em;
+    padding: 0.75em;
+    color: white;
+}
+
+.switcher-button button:first-child {
+    background-color: blue;
+}
+
+.switcher-button button:last-child {
+    background-color: blueviolet;
+}
