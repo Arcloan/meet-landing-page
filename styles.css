@@ -228,26 +228,26 @@ header {
 
 
 .hero-img-left {
-  content: url(./assets/desktop/image-hero-left.png);
+  content: url(starter-code/assets/desktop/image-hero-left.png);
   margin-bottom: 3rem;
   transition: ease 0.5s;
 }
 
 .hero-img-right {
-  content: url(./assets/desktop/image-hero-right.png);
+  content: url(starter-code/assets/desktop/image-hero-right.png);
   margin-bottom: -3rem;
   transition: ease 0.5s;
 }
 
 .hero-img-left:hover {
-  content: url(./assets/desktop/image-hero-left-hover.png);
+  content: url(starter-code/assets/desktop/image-hero-left-hover.png);
   margin-bottom: 3rem;
   transition: ease 0.5s;
   filter: saturate(0.5);
 }
 
 .hero-img-right:hover {
-  content: url(./assets/desktop/image-hero-right-hover.png);
+  content: url(starter-code/assets/desktop/image-hero-right-hover.png);
   margin-bottom: -3rem;
   transition: ease 0.5s;
   filter: saturate(0.5);
@@ -385,7 +385,7 @@ footer {
 
 .footer-wrapper::before {
   content: "";
-  background-image: url(./assets/desktop/image-footer.jpg);
+  background-image: url(starter-code/assets/desktop/image-footer.jpg);
   background-size: cover;
   position: absolute;
   top: 0rem;
@@ -421,7 +421,7 @@ footer {
   }
 
   .hero-img-mobile:hover {
-    content: url(./assets/tablet/image-hero-hover.png);
+    content: url(starter-code/assets/tablet/image-hero-hover.png);
   }
 
   .hero-wrapper .body-text {
@@ -453,7 +453,7 @@ footer {
 
 @media (max-width: 62.5rem) {
   .footer-wrapper::before {
-    background-image: url(./assets/tablet/image-footer.jpg);
+    background-image: url(starter-code/assets/tablet/image-footer.jpg);
   }
 }
 
@@ -525,7 +525,7 @@ footer {
   }
 
   .footer-wrapper::before {
-    background-image: url(./assets/mobile/image-footer.jpg);
+    background-image: url(starter-code/assets/mobile/image-footer.jpg);
   }
 }
 
