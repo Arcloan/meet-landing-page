@@ -14,12 +14,16 @@
 header > img {
     display: block;
     margin-inline: auto;
-    margin-block-end: 3rem;
+    margin-block: 2rem;
 }
 
 .flex {
     display:flex;
     gap: 2rem;
+}
+
+.blue {
+    color: hsl(192, 90%,77%);
 }
 
 .stack {
@@ -53,9 +57,112 @@ img {
 }
 
 .switcher-button button:first-child {
-    background-color: blue;
+    background-color: hsl(192, 37%, 48%);
 }
 
 .switcher-button button:last-child {
-    background-color: blueviolet;
+    background-color: hsl(268, 34%, 53%);
+}
+
+.divider-first {
+    margin-inline: auto;
+    margin-block: 3rem;
+    max-inline-size: max-content;
+}
+
+.divider-first > span {
+    border: thin solid lightgray;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.gallery {
+    max-inline-size: 80%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.description {
+    max-inline-size: 50ch;
+    margin-inline: auto;
+    margin-block: 3rem;
+}
+
+.cyan {
+    color: hsl(192, 37%, 48%);
+}
+
+.switcher-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.switcher-bottom > button {
+    padding: 0.75em;
+    border-radius: 2em;
+    border: thin solid;
+    background-color: hsl(268, 34%, 53%);
+    color: white;
+    margin-inline-start: 3rem;
+}
+
+.switcher-bottom > h2 {
+    font-size: 2em;
+    max-inline-size: 20ch;
+}
+
+.switcher-bottom > p {
+    max-inline-size: 35ch;
+}
+
+footer {
+    background-image: url(starter-code/assets/desktop/image-footer.jpg);
+    background-size: cover;
+    block-size: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-block-start: -3.5em;
+}
+
+.violet {
+    color: hsl(268, 100%,86%);
+}
+
+.image-tablet {
+    display: none;
+}
+
+@media (max-width : 50rem) {
+    .flex {
+        flex-direction: column;
+    }
+    .image-tablet {
+        display: block;
+    }
+    .image-desktop {
+        display: none;
+    }
+    .stack {
+        max-inline-size: 45ch;
+        margin-inline: auto;
+    }
+
+    .switcher-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        background-image: url(starter-code/assets/tablet/image-footer.jpg);
+    }
+}
+
+@media (max-width : 30rem) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
