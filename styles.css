@@ -136,7 +136,7 @@ footer {
     display: none;
 }
 
-@media (max-width : 50rem) {
+@media (max-width : 70rem) {
     .flex {
         flex-direction: column;
     }
@@ -161,7 +161,7 @@ footer {
     }
 }
 
-@media (max-width : 30rem) {
+@media (max-width : 40rem) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
